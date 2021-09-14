@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- main container-->
+    <div class="main-container">
+        <!-- main content section-->
+    <div class="main-content-section">
+        <!-- about main section-->
+        <div class="about-me">
+            <h1 class="my-name">Anna Dzhyhota</h1>
+            <h2 class="about-my-profession">Front-End Developer</h2>
+            
+            <p class="description">Creative and self-starting Front-End Developer with no experience but with a huge willing of building stable eCommerce websites and apps in fast-paced, collaborative environments. Skilled in HTML/CSS/JavaScript/ and knowledgeable of Figma. Passionate about learning new skills and technologies, strong-willed and forceful, talkative and easy-going.</p>
+        </div>
+            <!-- my education section-->
+            <div class="my-education-section">
+                <h3 class="main-content-title">Education</h3>
+
+                <ol class="my-education-list">
+                    <li class="my-education-item">Petro Mohyla Black Sea National University
+                        <span class="my-education-text">............................<a href="https://chmnu.edu.ua" class="my-education-link" ><span class="my-education-bracket">[</span>https://chmnu.edu.ua</a><span class="my-education-bracket">]</span><p class="my-education-degree">Master's degree in Social work.</p>
+                        </span>
+                    </li> 
+                    <li class="my-education-item">Pylyp Orlyk International Classical University
+                        <span class="my-education-text">......................
+                        <a href="https://mku.edu.ua" class="my-education-link"><span class="my-education-bracket">[</span >https://mku.edu.ua</a><span class="my-education-bracket">]</span><p class="my-education-degree">Bachelor's degree in geodesy and land management.</p>
+                    </span>
+                    </li> 
+                </ol>
+            </div>
+
+            <!--my additional education-->
+            <div class="my-additional-education-section">
+                <h4 class="main-content-title">Additional education</h4>
+                <div class="my-work-experience-company-block">
+                    <h4 class="my-work-experience-position">Courses |<span class="my-work-experience-company">Udemy</span> </h4>
+                    <p class="my-work-experience-period">February 2021 - June 2021 <span class="divider">|</span>Online</p>
+
+                    <ul class="my-work-experience-duties">
+                       <li  class="project-item-list">JavaScript Zero to Expert Complete 2021 Guide + 50 Projects</li> 
+                       <li  class="project-item-list">The Complete 2021 Web Development Bootcamp</li>
+                    </ul>
+                </div>
+            </div>
+                 <!--my code Example-->
+            <div class="my-education-section">
+                <h3 class="my-education-section-title">The code Example</h3>
+                <h4 class="my-work-experience-position">Navbar Effect |<span class="my-work-experience-company"> javascript</span></h4>
+                <pre><code>
+const fullImg = document.querySelector(".full-img");
+const smallImg = document.querySelectorAll(".gallery img");
+const modal = document.querySelector(".modal");
+
+// console.log(smallImg);
+smallImg.forEach(function (img) {
+  img.addEventListener("click", function () {
+    modal.classList.add("open");
+    fullImg.classList.add("open");
+
+    // Changin' the images dynamically
+    const originalQuality = img.getAttribute("alt");
+    fullImg.src = `img/full/${originalQuality}.jpg`;
+  });
+});
+
+modal.addEventListener("click", function (e) {
+  if (e.target.classList.contains("modal")) {
+    modal.classList.remove("open");
+    fullImg.classList.remove("open");
+  }
+});
+                </code></pre>
+            </div>
+            <footer class="footer">
+                <span class="footer__copyright">© <time datetime="2021">2021</time></span>
+                <a class="footer__github" href="https://github.com/AnnaDzig" target="_blank"><img src="images/icons/github.svg" alt="my GitHub" width="40" height="40"></a>
+                <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">for<img src="/img/rs_school_js.svg" alt="rs school js" width="90" height="33"></a>
+              </footer>
+         </div>
+        <div class="sidebar-section">
+            <!--sidebar section-->
+           <aside>
+               <img class="photo-section" src="./img/photo.jpg" alt="My photo">
+               <!--contact section-->
+               <div class="contact-section">
+                   <h3 class="sb-title-section">Contacts</h3>
+                   <div> <span class="contacts-section-type">C:</span> 
+                    <a class="contacts-section-link" href="tel:+380974811565">+380974811561</a>
+                       </div>
+                   <div><span class="contacts-section-type">E:</span>
+                    <a class="contacts-section-link" href="mailto:adzyhota@gmail.com">adzyhota@gmail.com</a> 
+                    </div>
+               </div>
+               <!--tech skill section-->
+               <div class="tech-skills-section">
+                   <h3 class="sb-title-section">Skills</h3>
+                   <ul class="tech-skills-list">
+                       <li class="tech-skills-item"> <span class="tech-skills-text">HTML5</span></li>
+                       <li class="tech-skills-item"> <span class="tech-skills-text">GIT</span></li>
+                       <li class="tech-skills-item"> <span class="tech-skills-text">JavaScript</span></li>
+                       <li class="tech-skills-item"><span class="tech-skills-text">Node.js</span></li>
+                       <li class="tech-skills-item"><span class="tech-skills-text">Figma</span></li>
+                   </ul>    
+               </div>
+               <!--soft skills section-->
+               <div class="soft-skills-section">
+                <h3 class="sb-title-section">Languages</h3>
+                <ul class="soft-skills-list">
+                    <li class="soft-skills-item"><span class="soft-skills-text">English-B2</span></li>
+                    <li class="soft-skills-item"><span class="soft-skills-text">Ukrainian-fluent</span></li>
+                    <li class="soft-skills-item"><span class="soft-skills-text">Russian-fluent</span></li>
+                    <li class="soft-skills-item"><span class="soft-skills-text">Polish-A1</span></li> 
+                </ul>    
+            </div>
+
+            </aside>
+        </div>
+         </div>
+    
+</body>
+</html>
